@@ -1,4 +1,5 @@
-﻿using Exemplo;
+﻿using MsLeitores;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Template.Infra
 {

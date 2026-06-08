@@ -1,24 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+using MsLeitores.DTO;
 
-namespace Exemplo
+namespace MsLeitores
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
-        {
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        }
-        
-        //public DbSet<Exemplo> Exemplos { get; set; }
-        
+        public DbSet<Leitor> Leitores { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Exemplo>().HasKey(p => p.Id);
-            
-
+            modelBuilder.Entity<Leitor>().HasKey(p => p.Id);
             base.OnModelCreating(modelBuilder);
         }
     }

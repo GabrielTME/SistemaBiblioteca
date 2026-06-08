@@ -1,4 +1,5 @@
-﻿using Exemplo;
+﻿using MsAcervo;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Template.Infra
 {
