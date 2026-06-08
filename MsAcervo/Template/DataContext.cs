@@ -1,24 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+using MsAcervo.DTO;
 
-namespace Exemplo
+namespace MsAcervo
 {
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-
         }
         
-        //public DbSet<Exemplo> Exemplos { get; set; }
+        public DbSet<Livro> Livros { get; set; }
         
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Exemplo>().HasKey(p => p.Id);
+            modelBuilder.Entity<Livro>().HasKey(p => p.Id);
             
-
             base.OnModelCreating(modelBuilder);
         }
     }
