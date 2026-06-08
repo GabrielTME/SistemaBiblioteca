@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34408.163
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11822.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template", "Template\Template.csproj", "{3878B6F0-F3B6-443E-B3D6-FFFE9E76F30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MsAcervo", "Template\MsAcervo.csproj", "{3878B6F0-F3B6-443E-B3D6-FFFE9E76F30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsLeitores", "..\MsLeitores\Template\MsLeitores.csproj", "{C3670359-642C-196A-A35A-184A9789BECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsEmprestimos", "..\MsEmprestimos\Template\MsEmprestimos.csproj", "{F74EB0D4-B269-BD09-6C9C-4DE52B2FC912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3878B6F0-F3B6-443E-B3D6-FFFE9E76F30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3878B6F0-F3B6-443E-B3D6-FFFE9E76F30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3878B6F0-F3B6-443E-B3D6-FFFE9E76F30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3670359-642C-196A-A35A-184A9789BECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3670359-642C-196A-A35A-184A9789BECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3670359-642C-196A-A35A-184A9789BECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3670359-642C-196A-A35A-184A9789BECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74EB0D4-B269-BD09-6C9C-4DE52B2FC912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74EB0D4-B269-BD09-6C9C-4DE52B2FC912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74EB0D4-B269-BD09-6C9C-4DE52B2FC912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74EB0D4-B269-BD09-6C9C-4DE52B2FC912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

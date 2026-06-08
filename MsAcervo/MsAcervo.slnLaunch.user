@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Template\\MsAcervo.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\MsLeitores\\Template\\MsLeitores.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\MsEmprestimos\\Template\\MsEmprestimos.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

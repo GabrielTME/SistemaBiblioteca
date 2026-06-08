@@ -1,24 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+using MsEmprestimos.DTO;
 
-namespace Exemplo
+namespace MsEmprestimos
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
-        {
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        }
-        
-        //public DbSet<Exemplo> Exemplos { get; set; }
-        
+        public DbSet<Emprestimo> Emprestimos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Exemplo>().HasKey(p => p.Id);
-            
-
+            modelBuilder.Entity<Emprestimo>().HasKey(p => p.Id);
             base.OnModelCreating(modelBuilder);
         }
     }
